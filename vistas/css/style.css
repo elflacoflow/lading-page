@@ -1,0 +1,327 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primero-color:#1e2523;
+    --segundo-color:#305043f7;
+    --tercer-color:#e0d9d9;
+}
+
+html,body{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+header{
+    position: relative;
+    width: 100%;
+}
+
+header nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primero-color);
+    z-index: 5;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 0;
+}
+
+#container-public{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 0;
+}
+
+header nav #container img{
+    width: 90px;
+}
+
+header nav #container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header nav #container ul li{
+    list-style: none;
+    margin-left: 90px;
+}
+
+header nav #container ul li a{
+    font-size: 23px;
+    color: #ffffff;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ffffff;
+    text-decoration: none;
+}
+
+header nav #container ul li:nth-child(4) a{
+    padding: 10px;
+    border: none;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* Aaca se crea un nuevo container para centrar los elementos pero entonces aca ya no le damos space beetwen */
+
+header .section-1{
+    padding-top: 100px;
+    width: 100%;
+    background-color: var(--segundo-color);
+}
+
+.container-2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .section-1 .container-2 .nosotros{
+    padding: 80px 0;
+    width: 50%;
+}
+
+header .section-1 .container-2 .nosotros h1{
+    font-size: 65px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+header .section-1 .container-2 .nosotros h2, i{
+    color: #dbbdbd;
+}
+
+header .section-1 .container-2 .nosotros p{
+    font-size:27px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+header .section-1 .container-2 .foto-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+
+header .section-1 .container-2 .foto-2 img{
+    width: 250px;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+main{
+    width: 100%;
+}
+
+main .section-main{
+    background-color: var(--tercer-color);
+}
+
+main .section-main .container-2 .cortes-2{
+    width: 50%;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+main .section-main .container-2 .cortes-2 h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+main .section-main .container-2 .cortes-2 .cortes-display{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main .section-main .container-2 .cortes-2 .cortes-display img{
+    width: 30%;
+    border-radius: 100%;
+}
+
+main .section-main .container-2 .cortes-2 .cabello{
+    width: 100%;
+    margin-top: 30%;
+}
+
+main .publicidad{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+main .publicidad #container-public .card-public{
+    background-image: url("../img/11.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 4px;
+}
+
+main .publicidad #container-public .card-public h2{
+    font-size: 23px;
+    color: #fc8004;
+    margin-bottom: 15px;
+}
+
+main .publicidad #container-public .card-public p{
+    font-size: 22px;
+    color: #ffffff;
+    margin: 10px;
+}
+
+main .publicidad #container-public .card-public h3{
+    font-size: 20px;
+        color: #fc8004;
+}
+
+
+main .form {
+    background-color: rgb(122, 79, 79);
+    position: relative;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+main .form .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main .form .cont form {
+    background-color: #ffffff26;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+main .form .cont form h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* .bloque con tus inputs, selects, etc. */
+main .form .cont form .bloque {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+main .form .cont form .bloque label {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+main .form .cont form .bloque input,
+main .form .cont form .bloque select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffffc2;
+    color: #000;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Efecto al enfocar */
+main .form .cont form .bloque input:focus,
+main .form .cont form .bloque select:focus {
+    box-shadow: 0 0 5px var(--primero-color);
+    background-color: #fff;
+}
+
+/* Botón */
+main .form .cont form .bloque button {
+    background-color: var(--primero-color);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover del botón */
+main .form .cont form .bloque button:hover {
+    background-color: #000;
+}
+
+/* Enlace debajo del botón */
+main .form .cont form .bloque a {
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--primero-color);
+    transition: 0.3s;
+}
+
+/* Hover del enlace */
+main .form .cont form .bloque a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+footer{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #000000;
+    padding: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+footer a{
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+
+
